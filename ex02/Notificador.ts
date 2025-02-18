@@ -14,7 +14,6 @@ class NotificadorSMS extends Notificador {
     }
 }
 
-// Script principal
 type NotificadorTipo = NotificadorEmail | NotificadorSMS;
 
 const notificadores: NotificadorTipo[] = [
