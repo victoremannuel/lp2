@@ -1,5 +1,5 @@
-import { NotificadorEmail } from "./NotificadorEmail"
-import { NotificadorSMS } from "./NotificadorSMS"
+import { NotificadorEmail } from "./NotificadorEmail";
+import { NotificadorSMS } from "./NotificadorSMS";
 
 type NotificadorTipo = NotificadorEmail | NotificadorSMS;
 
