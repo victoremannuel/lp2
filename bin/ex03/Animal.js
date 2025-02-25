@@ -1,5 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Notificador {
+class Animal {
 }
-exports.default = Notificador;
+exports.default = Animal;
