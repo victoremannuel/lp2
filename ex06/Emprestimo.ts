@@ -12,7 +12,6 @@ export class Emprestimo {
     }
 
     exibirDetalhes (livro : Livro, dataDevolucao : Date, dataEmprestimo : Date) {
-        console.log(`o livro ${livro} foi emprestado em ${dataEmprestimo} e devolvido em ${dataDevolucao}.`);
-        
+        console.log(`o livro ${livro.titulo} foi emprestado em ${dataEmprestimo} e devolvido em ${dataDevolucao}.`)
     }
 }
