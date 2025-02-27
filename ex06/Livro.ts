@@ -11,5 +11,10 @@ export class Livro {
         this.anoPublicacao = anoPublicacao
         this.autor = autor
     }
+
+    exibirDetalhes (titulo : string, anoPublicacao : number, autor : Autor) {
+        console.log(`o livro ${titulo} foi escrito por ${autor} e publicado em ${anoPublicacao}`);
+        
+    }
     
 }
