@@ -1,7 +1,7 @@
-import { Funcionario } from "./Funcionario";
+// import { Funcionario } from "./Funcionario";
 
-export class Assistente extends Funcionario {
-    calculaSalario(): number {
-        return this.salarioBase;
-    }
-}
+// export class Assistente extends Funcionario {
+//     calculaSalario(): number {
+//         return this.salarioBase;
+//     }
+// }
