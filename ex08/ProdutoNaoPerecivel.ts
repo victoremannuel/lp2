@@ -8,10 +8,7 @@ export class ProdutoNaoPerecivel extends Produto {
         preco:number,
         quantidadeEmEstoque:number
     ) {
-        this.nome = nome
-        this.codigo = codigo
-        this.preco = preco
-        this.quantidadeEmEstoque = quantidadeEmEstoque
+        super(nome, codigo, preco, quantidadeEmEstoque)
     }
 
     adicionarEstoque (quantidade:number) : void {

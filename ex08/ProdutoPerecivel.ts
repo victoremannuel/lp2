@@ -10,10 +10,7 @@ export class ProdutoPerecivel extends Produto {
         quantidadeEmEstoque:number,
         dataValidade : Date
     ) {
-        this.nome = nome
-        this.codigo = codigo
-        this.preco = preco
-        this.quantidadeEmEstoque = quantidadeEmEstoque
+        super(nome, codigo, preco, quantidadeEmEstoque)
         this.dataValidade = dataValidade
     }
 
