@@ -13,8 +13,8 @@ function main(): void {
     const emprestimo1 = new Emprestimo(livro1, new Date(), new Date())
     const emprestimo2 = new Emprestimo(livro2, new Date(), new Date())
     
-    emprestimo1.exibirDetalhes(livro1, new Date(),new Date())
-    emprestimo2.exibirDetalhes(livro2, new Date(),new Date())
+    emprestimo1.exibirDetalhes()
+    emprestimo2.exibirDetalhes()
 }
 
 // Executa o programa

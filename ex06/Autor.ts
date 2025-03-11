@@ -8,8 +8,8 @@ export class Autor {
         this.nacionalidade = nacionalidade
     }
 
-    exibirDetalhes (nome : string, nacionalidade : string) {
-        console.log(`autor chama ${nome} e nasceu em ${nacionalidade}`);
+    exibirDetalhes () : string {
+        return `autor chama ${this.nome} e nasceu em ${this.nacionalidade}`
         
     }
 

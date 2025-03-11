@@ -11,7 +11,7 @@ export class Emprestimo {
         this.dataDevolucao = dataDevolucao
     }
 
-    exibirDetalhes (livro : Livro, dataDevolucao : Date, dataEmprestimo : Date) {
-        console.log(`o livro ${livro.titulo} foi emprestado em ${dataEmprestimo} e devolvido em ${dataDevolucao}.`)
+    exibirDetalhes () : string {
+        return `o livro ${this.livro.titulo} foi emprestado em ${this.dataEmprestimo} e devolvido em ${this.dataDevolucao}.`
     }
 }
