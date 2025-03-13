@@ -10,8 +10,8 @@ produtoNaoPerecivel1.adicionarEstoque(1)
 produtoPerecivel1.calcularValorTotalEmEstoque()
 produtoNaoPerecivel1.calcularValorTotalEmEstoque()
 
-produtoPerecivel1.removerEstoque(5)
-produtoNaoPerecivel1.removerEstoque(5)
+produtoPerecivel1.removerEstoque(2)
+produtoNaoPerecivel1.removerEstoque(2)
 
 produtoPerecivel1.calcularValorTotalEmEstoque()
 produtoNaoPerecivel1.calcularValorTotalEmEstoque()

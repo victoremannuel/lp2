@@ -8,22 +8,23 @@ class ProdutoPerecivel extends Produto_1.Produto {
         this.dataValidade = dataValidade;
     }
     adicionarEstoque(quantidade) {
-        this.quantidadeEmEstoque + quantidade;
+        this.quantidadeEmEstoque = this.quantidadeEmEstoque + quantidade;
     }
     removerEstoque(quantidade) {
-        this.quantidadeEmEstoque - quantidade;
+        this.quantidadeEmEstoque = this.quantidadeEmEstoque - quantidade;
     }
     calcularValorTotalEmEstoque() {
         return this.quantidadeEmEstoque;
     }
     detalhesDoProduto() {
-        return `
+        console.log(`
         Produto: ${this.nome} (Perecivel)\n
         Código: ${this.codigo}\n
         Preço: ${this.preco}\n
-        Quantidade em estoque: ${this.quantidadeEmEstoque}
-        Valor total em estoque: ${this.quantidadeEmEstoque}
-        `;
+        Quantidade em estoque: ${this.quantidadeEmEstoque}\n
+        Valor total em estoque: ${this.quantidadeEmEstoque}\n
+        Data de Validade: ${this.dataValidade}
+        `);
     }
 }
 exports.ProdutoPerecivel = ProdutoPerecivel;

@@ -15,11 +15,11 @@ export class ProdutoPerecivel extends Produto {
     }
 
     adicionarEstoque (quantidade:number) : void {
-        this.quantidadeEmEstoque + quantidade
+        this.quantidadeEmEstoque = this.quantidadeEmEstoque + quantidade
     }
 
     removerEstoque (quantidade:number) : void {
-        this.quantidadeEmEstoque - quantidade
+        this.quantidadeEmEstoque = this.quantidadeEmEstoque - quantidade
     }
 
     calcularValorTotalEmEstoque () : number {
