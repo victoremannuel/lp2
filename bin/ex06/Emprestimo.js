@@ -7,8 +7,8 @@ class Emprestimo {
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucao = dataDevolucao;
     }
-    exibirDetalhes(livro, dataDevolucao, dataEmprestimo) {
-        console.log(`o livro ${livro.titulo} foi emprestado em ${dataEmprestimo} e devolvido em ${dataDevolucao}.`);
+    exibirDetalhes() {
+        return `o livro ${this.livro.titulo} foi emprestado em ${this.dataEmprestimo} e devolvido em ${this.dataDevolucao}.`;
     }
 }
 exports.Emprestimo = Emprestimo;

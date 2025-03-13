@@ -23,13 +23,14 @@ export class ProdutoNaoPerecivel extends Produto {
         return this.quantidadeEmEstoque
     }
 
-    detalhesDoProduto () : string {
-        return `
+    detalhesDoProduto () : void {
+        console.log(
+        `
         Produto: ${this.nome} (Não Perecivel)\n
         Código: ${this.codigo}\n
         Preço: ${this.preco}\n
-        Quantidade em estoque: ${this.quantidadeEmEstoque}
-        Valor total em estoque: ${this.quantidadeEmEstoque}
-        `
+        Quantidade em estoque: ${this.quantidadeEmEstoque}\n
+        Valor total em estoque: ${this.quantidadeEmEstoque}\n
+        `)
     }
 }

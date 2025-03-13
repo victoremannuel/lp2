@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const ProdutoNaoPerecivel_1 = require("./ProdutoNaoPerecivel");
+const ProdutoPerecivel_1 = require("./ProdutoPerecivel");
+const produtoPerecivel1 = new ProdutoPerecivel_1.ProdutoPerecivel('iogurte', 1, 4.99, 10, new Date());
+const produtoNaoPerecivel1 = new ProdutoNaoPerecivel_1.ProdutoNaoPerecivel('arroz', 2, 20.99, 10);
+produtoPerecivel1.adicionarEstoque(1);
+produtoNaoPerecivel1.adicionarEstoque(1);
+produtoPerecivel1.calcularValorTotalEmEstoque();
+produtoNaoPerecivel1.calcularValorTotalEmEstoque();
+produtoPerecivel1.removerEstoque(5);
+produtoNaoPerecivel1.removerEstoque(5);
+produtoPerecivel1.calcularValorTotalEmEstoque();
+produtoNaoPerecivel1.calcularValorTotalEmEstoque();
+produtoPerecivel1.detalhesDoProduto();
+produtoNaoPerecivel1.detalhesDoProduto();

@@ -11,8 +11,8 @@ function main() {
     const livro3 = new Livro_1.Livro("titulo 3", 2003, autor2);
     const emprestimo1 = new Emprestimo_1.Emprestimo(livro1, new Date(), new Date());
     const emprestimo2 = new Emprestimo_1.Emprestimo(livro2, new Date(), new Date());
-    emprestimo1.exibirDetalhes(livro1, new Date(), new Date());
-    emprestimo2.exibirDetalhes(livro2, new Date(), new Date());
+    emprestimo1.exibirDetalhes();
+    emprestimo2.exibirDetalhes();
 }
 // Executa o programa
 main();

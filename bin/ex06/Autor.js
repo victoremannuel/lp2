@@ -6,8 +6,8 @@ class Autor {
         this.nome = nome;
         this.nacionalidade = nacionalidade;
     }
-    exibirDetalhes(nome, nacionalidade) {
-        console.log(`autor chama ${nome} e nasceu em ${nacionalidade}`);
+    exibirDetalhes() {
+        return `autor chama ${this.nome} e nasceu em ${this.nacionalidade}`;
     }
 }
 exports.Autor = Autor;

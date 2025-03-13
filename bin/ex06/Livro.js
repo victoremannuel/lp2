@@ -7,8 +7,8 @@ class Livro {
         this.anoPublicacao = anoPublicacao;
         this.autor = autor;
     }
-    exibirDetalhes(titulo, anoPublicacao, autor) {
-        console.log(`o livro ${titulo} foi escrito por ${autor} e publicado em ${anoPublicacao}`);
+    exibirDetalhes() {
+        return `o livro ${this.titulo} foi escrito por ${this.autor} e publicado em ${this.anoPublicacao}`;
     }
 }
 exports.Livro = Livro;
