@@ -1,7 +1,23 @@
-// import { Funcionario } from "./Funcionario";
+class Assistente implements Funcionario {
+    constructor(
+        private nome: string,
+        private matricula: string,
+        private salarioBase: number
+    ) {}
 
-// export class Assistente extends Funcionario {
-//     calculaSalario(): number {
-//         return this.salarioBase;
-//     }
-// }
+    getNome(): string {
+        return this.nome;
+    }
+
+    getMatricula(): string {
+        return this.matricula;
+    }
+
+    getSalarioBase(): number {
+        return this.salarioBase;
+    }
+
+    calculaSalario(): number {
+        return this.salarioBase;
+    }
+}

@@ -1,11 +1,21 @@
-import { Funcionario } from "./Funcionario";
+class Vendedor implements Funcionario {
+    constructor(
+        private nome: string,
+        private matricula: string,
+        private salarioBase: number,
+        private comissao: number
+    ) {}
 
-export class Vendedor extends Funcionario {
-    private comissao: number;
+    getNome(): string {
+        return this.nome;
+    }
 
-    constructor(nome: string, matricula: string, salarioBase: number, comissao: number) {
-        super(nome, matricula, salarioBase);
-        this.comissao = comissao;
+    getMatricula(): string {
+        return this.matricula;
+    }
+
+    getSalarioBase(): number {
+        return this.salarioBase;
     }
 
     calculaSalario(): number {
