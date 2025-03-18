@@ -1,8 +1,11 @@
 export abstract class Matriculado {
-    constructor (
-        matricula : string,
-        notas : number[]
-    ) {}
+    protected matricula: string;
+    protected notas: number[];
 
-    abstract calcularMedia() : number
+    constructor(matricula: string, numeroDeNotas: number) {
+        this.matricula = matricula;
+        this.notas = new Array(numeroDeNotas).fill(0);
+    }
+
+    abstract calcularMedia(): number;
 }
